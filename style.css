@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    border-bottom: 0.5rem solid #d1db93;
+    max-width: 90%;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+ul {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+}
+
+li {
+    box-shadow: 0 0 0.8rem #d1d1d1;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    list-style: none;
+    text-align: center;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    padding: 0.5rem;  
+    text-decoration: none;
+    border: 1px solid black;
+    color: #000;
+    font-weight: 600;
+    border-radius: 0.2rem;
+    max-width: 70%;
+}
+
+a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+p{
+    padding: 0.5rem;
+}
+
+img {
+    padding: 0.5rem;
+    max-width: 50%;
+}
+
+@media (min-width:769px){
+    ul {
+        flex-flow: row wrap;
+        max-width: 100%;
+    }
+
+    li{
+        max-width: 25%;
+    }
+
+    .header {
+        height: 30vh;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+}
+
+button {
+    border: 1px solid black;
+    padding: 0.5rem 1.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    background: white;
+    font-weight: 600;
+    border-radius: 0.2rem;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+}
